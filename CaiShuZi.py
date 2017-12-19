@@ -72,14 +72,14 @@ def game(num,steps):
                 cz += 1
             else:
                 pass
-        print "您输入的数字有有%s个数字猜中，但位置不正确。" % cz
+        print "您输入的数字中有%s个数字被随机数包含。" % cz
         #统计完全正确的数字。
         for i in range(len(str(num))):
             if ','.join(str(pn)).split(',')[i] == ','.join(str(num)).split(',')[i]:
                 zq += 1
             else:
                 pass
-        print "您输入的数字，有%s个数字完全填写正确。" % zq
+        print "您输入的数字，有%s个数字及位置完全填写正确。" % zq
 
         #判断是否通关成功
         if zq == len(str(num)):
